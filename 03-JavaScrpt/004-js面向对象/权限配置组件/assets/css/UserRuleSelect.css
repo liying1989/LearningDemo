@@ -1,0 +1,105 @@
+html,body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, "Microsoft YaHei";
+    background-color: #b1b1b1;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.mask{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.3);
+}
+.user-rule-select {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin-left: -290px;
+    margin-top: -250px;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 50px 20px;
+    width: 540px;
+    height: 400px;
+}
+.user-rule-select .data-list {
+    width: 40%;
+    height: 90%;
+    background-color: #fafafa;
+    border: 1px solid #e5e5e5;
+    float: left;
+}
+.user-rule-select .data-list li {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    text-indent: 10px;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+}
+.user-rule-select .data-list li:hover {
+    background-color: dodgerblue;
+    color: #fff;
+    cursor: pointer;
+}
+.user-rule-select .data-list li.selected {
+    background-color: #666;
+    color: #fff;
+}
+.user-rule-select .data-oper {
+    width: 18%;
+    height: 100%;
+    float: left;
+    padding-top: 25%;
+}
+.user-rule-select .data-oper .button {
+    margin: 20px auto;
+    text-align: center;
+}
+.user-rule-select .button {
+    width: 80px;
+    height: 36px;
+    display: block;
+    border: 1px solid #d9d9d9;
+    line-height: 36px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f3f3f3;
+    font-size: 14px;
+}
+.user-rule-select .button:hover {
+    background-color: dodgerblue;
+    color: #fff;
+}
+.user-rule-select .data-bar {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 10%;
+}
+.user-rule-select .data-bar .button{
+    float: right;
+    text-align: center;
+    margin-right: 25px;
+}
+.user-rule-select .data-bar .button.close{
+    background-color: indianred;
+    color: #fff;
+}
